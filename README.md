@@ -4,3 +4,4 @@
 - [ ] Modificare le description
 - [ ] Controllare <a href="../index.html" xml:lang="en">Home</a>
 - [ ] Completare `protagonisti.html` 
+- [ ] Sistemare i titoli
