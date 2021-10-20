@@ -1,5 +1,51 @@
-abbr[title] {
-    border-bottom: none !important;
-    cursor: default !important;
-    text-decoration: none !important;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html body{
+    /*Utilizzo ... risentire! 44 m*/
+    font-size: 100%;
+    font-family: "Comic-Sans MS", cursive, sans-serif;
+    margin: auto;
+    /*Centro la pagina mettendo una dimensione massima della pagina*/
+    max-width: 1024px;
+}
+
+body{
+    border: 1px solid black;
+}
+
+header{
+    color: #F3C424;
+    background-color: #A80022;
+    text-align: center;
+    background-image: url('images/sfondo.png');
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1em;
+    padding-top: 0.7em;
+}
+
+header h1{
+    background-image: url('images/angry-birds-logo-nero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999em;
+    /*Padding non influenza il background, margin si*/
+    padding-top: 0.7em;
+}
+
+header h2{
+    font-size: 2em;
+    margin-top: 0.3em;
+}
+
+#breadcrumb{
+    color: #F3C424;
+    background-color: #0E1E38;
+    font-size: 1.1em;
+    padding: 0.5em 0em 0.5em 1.0em;
 }
