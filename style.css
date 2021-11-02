@@ -49,6 +49,9 @@ header h2{
     font-size: 1.1em;
     padding: 0.5em 0em 0.5em 1.0em;
 }
+#breadcrumb a{
+    color: white;
+}
 
 /*
 =============
@@ -151,7 +154,7 @@ Sezione Contenuto
     margin-left: 25%;
 }
 
-#historyImage{
+#image{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -161,6 +164,37 @@ Sezione Contenuto
 #goback{
     display: block;
     text-align: right;
+}
+
+#version dt{
+    background-color:#A80022;
+    color: white;
+    padding: 0.5em;
+    font-size:1.1em;
+}
+
+#version dd{
+    border: 1px solid #000;
+    border-top: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    min-height: 10em;
+}
+
+#curiosityH1{ 
+    text-align: center; 
+} 
+
+#curiosityH2{ 
+    font-size: 1.2em; 
+    padding: 0.2em; 
+}
+ 
+#imageCake{
+    vertical-align: middle;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 25%; 
 }
 
 /*
