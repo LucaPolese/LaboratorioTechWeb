@@ -115,7 +115,7 @@ Sezione Breaking News
 
 /*
 =============
-Sezione Breaking News
+Sezione Contenuto
 =============
 */
 
@@ -126,6 +126,30 @@ Sezione Breaking News
     padding: 2.0em 1.0em 1.0em 3.5em;
 }
 
+#charactersStory dd{
+    border: 1px solid #000;
+    border-top: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    min-height: 10em;
+}
+
+#charactersStory dt{
+    background-color:#A80022;
+    color: white;
+    padding: 0.5em;
+    font-size:1.1em;
+}
+
+#charactersStory img{
+    float:left;
+    width: 20%;
+    margin-right:1em;
+}
+
+#charactersStory dd p {
+    margin-left: 25%;
+}
 
 /*
 =============
