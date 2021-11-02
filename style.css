@@ -151,6 +151,18 @@ Sezione Contenuto
     margin-left: 25%;
 }
 
+#historyImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#goback{
+    display: block;
+    text-align: right;
+}
+
 /*
 =============
 Sezione Footer
