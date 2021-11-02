@@ -24,6 +24,7 @@ header{
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    /*Padding non influenza il background, margin si*/
     padding: 1em;
     padding-top: 0.7em;
 }
@@ -33,9 +34,8 @@ header h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    text-indent: -999em;
-    /*Padding non influenza il background, margin si*/
-    padding-top: 0.7em;
+    text-indent: -99999em;
+    font-size: 3em;
 }
 
 header h2{
