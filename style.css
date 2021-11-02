@@ -13,7 +13,7 @@ html body{
 }
 
 body{
-    border: 1px solid black;
+    border: 1px solid #000;
 }
 
 header{
@@ -24,7 +24,7 @@ header{
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
-    /*Padding non influenza il background, margin si*/
+    /*Padding non influenza il background, margin se lo porta dietro*/
     padding: 1em;
     padding-top: 0.7em;
 }
@@ -48,4 +48,107 @@ header h2{
     background-color: #0E1E38;
     font-size: 1.1em;
     padding: 0.5em 0em 0.5em 1.0em;
+}
+
+/*
+=============
+Sezione Menù
+=============
+*/
+
+#menu{
+    float: left;
+    /*Do dello spazio in % della finestra*/
+    width: 20%;
+    font-size: 1.3em;
+    padding: 0.8em;
+}
+
+#menu ul{
+    list-style-type: none;
+}
+
+#menu ul li{
+    margin-top: 0.5em;
+}
+
+#currentLink{
+    background-image: url(images/red.png);
+    background-position: left center;
+    background-size: 1.4em;
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
+}
+
+/*
+=============
+Sezione Breaking News
+=============
+*/
+
+#breakingNews{
+    float: right;
+    width: 20%;
+    border: 1px dashed #000;
+    padding : 0.5em;
+    margin-top : 1em;
+    /*Percentuale per adattarsi alle caratteristiche dell'utente ....*/
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+#breakingNews h2{
+    font-size: 1.2em;
+    background-color : #F3C42B;
+    padding: 0.2em;
+}
+
+#breakingNews dt{
+    margin-left : 0.8em;
+    font-weight: bold;
+}
+
+
+#breakingNews dd{
+    margin-left : 1.5em;
+}
+
+/*
+=============
+Sezione Breaking News
+=============
+*/
+
+#content{
+    border-left: 1px solid #000;
+    /*Problema dell'arrotondamento! Dipende dal browser, meglio sforare*/
+    margin-left: 25%; 
+    padding: 2.0em 1.0em 1.0em 3.5em;
+}
+
+
+/*
+=============
+Sezione Footer
+=============
+*/
+
+footer{
+    clear: both;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #000;
+    padding: 0.5em;
+}
+
+footer p{
+    display: inline;
+    font-style: italic;
+}
+
+footer .imgValidCode{
+    vertical-align: middle;
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+    margin-bottom: 1.0em;
 }
