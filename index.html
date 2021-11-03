@@ -6,7 +6,10 @@
         <meta name="keywords" content="angry birds, gioco, red, trucchi, suggerimenti"/>
         <meta name="description" content="Primo esercizio di tecnologie web"/>
         <meta name="author" content="Luca Polese"/>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" media ="screen" href="../style.css"/>
+        <!--Meglio non usare handled, la soluzione migliore è quella di usare comunque screen: dispositivi più vecchi si dichiarano screen-->
+        <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px)" href="mini.css"/>
+        <link rel="stylesheet" type="text/css" media ="print" href="print.css"/>
         <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     </head>
     <body>
