@@ -132,14 +132,8 @@ Sezione Contenuto
     border-left: 1px solid #000;
     /*Problema dell'arrotondamento! Dipende dal browser, meglio sforare*/
     margin-left: 25%; 
-    padding: 2.0em 1.0em 1.0em 3.5em;
+    padding: 1.0em 1.0em 1.0em 1.0em;
 }
-
-/*Rivedere
-#imagePage{
-    margin-left: auto;
-    margin-right: auto;
-}*/
 
 #charactersStory dd{
     border: 1px solid #000;
@@ -171,11 +165,24 @@ Sezione Contenuto
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: auto;
 }
 
-#goback{
+#imageCake{
+    vertical-align: middle;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 25%; 
+}
+
+#imagePage{
     display: block;
-    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 50%;
+    box-shadow: 10px 10px 8px;
 }
 
 #version dt{
@@ -193,6 +200,13 @@ Sezione Contenuto
     min-height: 10em;
 }
 
+.goback{
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    max-width: fit-content;
+}
+
 #curiosityH1{ 
     text-align: center; 
 } 
@@ -200,21 +214,6 @@ Sezione Contenuto
 #curiosityH2{ 
     font-size: 1.2em; 
     padding: 0.2em; 
-}
- 
-#imageCake{
-    vertical-align: middle;
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 25%; 
-}
-
-#imagePage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    box-shadow: 10px 10px 8px;
 }
 
 /*
