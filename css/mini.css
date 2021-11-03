@@ -1,0 +1,22 @@
+#breakingNews{
+    float: none;
+    width: 90%;
+}
+
+#menu {
+    float: none;
+    width: 90%;
+    font-size: 1.5em;
+}
+
+#content{
+    margin-left: 0;
+    padding: 1em;
+    border: none;
+}
+
+#footer p{
+    width: 75%; 
+}
+
+/*Rivedere*/
