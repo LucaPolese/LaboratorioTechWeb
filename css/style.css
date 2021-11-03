@@ -135,9 +135,11 @@ Sezione Contenuto
     padding: 2.0em 1.0em 1.0em 3.5em;
 }
 
-#content img{
-    box-shadow: 10px 10px 8px;
-}
+/*Rivedere
+#imagePage{
+    margin-left: auto;
+    margin-right: auto;
+}*/
 
 #charactersStory dd{
     border: 1px solid #000;
@@ -205,6 +207,14 @@ Sezione Contenuto
     margin-left: auto; 
     margin-right: auto; 
     width: 25%; 
+}
+
+#imagePage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 10px 10px 8px;
 }
 
 /*
