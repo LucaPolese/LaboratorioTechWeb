@@ -36,6 +36,12 @@ header h1{
     background-position: center;
     text-indent: -99999em;
     font-size: 3em;
+    /*A qualunque proprietà cambi, questa varia ogni 0.25 sec a seconda dello sviluppo della curva di Bezier*/
+    transition: all .25s cubic-bezier(0.19,1,0.22,1);
+}
+
+header h1:hover{
+    transform: scale(1.05);
 }
 
 header h2{
@@ -127,6 +133,10 @@ Sezione Contenuto
     /*Problema dell'arrotondamento! Dipende dal browser, meglio sforare*/
     margin-left: 25%; 
     padding: 2.0em 1.0em 1.0em 3.5em;
+}
+
+#content img{
+    box-shadow: 10px 10px 8px;
 }
 
 #charactersStory dd{
