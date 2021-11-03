@@ -119,11 +119,14 @@ Sezione Contenuto
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    height: auto;
 }
 
-#goback{
+.goback{
     display: block;
     text-align: right;
+    margin-left: auto;
+    max-width: fit-content;
 }
 
 #version dt{
