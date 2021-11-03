@@ -20,7 +20,7 @@ header{
     color: #F3C424;
     background-color: #A80022;
     text-align: center;
-    background-image: url('images/sfondo.png');
+    background-image: url('../images/sfondo.png');
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ header{
 }
 
 header h1{
-    background-image: url('images/angry-birds-logo-nero.png');
+    background-image: url('../images/angry-birds-logo-nero.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -82,7 +82,7 @@ Sezione Menù
 }
 
 #currentLink{
-    background-image: url(images/red.png);
+    background-image: url(../images/red.png);
     background-position: left center;
     background-size: 1.4em;
     background-repeat: no-repeat;
