@@ -135,11 +135,11 @@ Sezione Contenuto
     padding: 2.0em 1.0em 1.0em 3.5em;
 }
 
-/*Rivedere
+/*Suggested Version*/
 #imagePage{
-    margin-left: auto;
-    margin-right: auto;
-}*/
+    box-shadow: 8px 8px 20px grey;
+    margin: auto;
+}
 
 #charactersStory dd{
     border: 1px solid #000;
@@ -173,9 +173,12 @@ Sezione Contenuto
     width: 50%;
 }
 
+/*Suggested Version*/
 #goback{
     display: block;
     text-align: right;
+    margin-left: auto;
+    max-width: fit-content;
 }
 
 #version dt{
@@ -217,7 +220,50 @@ Sezione Contenuto
     box-shadow: 10px 10px 8px;
 }
 
+
+
 /*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SUGGESTED CURIOSITY VERSION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#curiosita {
+    border-left: 1px solid #000;
+    margin-left: 25%;
+    padding: 1.0em;
+    padding-top: 2.0em;
+    padding-left: 3.5em;
+}
+
+#curiosita h1{
+    text-align: center;
+}
+
+#curiosita h2{
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+#curiosity1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.curiosityfoot{
+    vertical-align: middle;
+}
+
+
+        ----------------------------------------------------------------------------------------
+       |  So use a new ID for the main content DIV, calling it "curiosita"                      |
+       | ( this because the page titles requires a different arrangement from the others ).     |
+       | Then give an ID to the first image (curiosity1 here) and a CLASS (curiosityfoot) to    |
+       | the last ones at the bottom.                                                           |
+        -----------------------------------------------------------------------------------------
+/*
+
+
 =============
 Sezione Footer
 =============
