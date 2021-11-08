@@ -4,9 +4,7 @@
 }
 
 html body{
-    /*Utilizzo ... risentire! 44 m*/
-    font-size: 100%;
-    font-family: "Comic-Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE_Regular", sans-serif;
     margin: auto;
     /*Centro la pagina mettendo una dimensione massima della pagina*/
     max-width: 1024px;
@@ -56,6 +54,7 @@ header h2{
     padding: 0.5em 0em 0.5em 1.0em;
 }
 #breadcrumb a{
+    max-width: fit-content;
     color: white;
 }
 
