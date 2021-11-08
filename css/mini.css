@@ -1,12 +1,22 @@
 #breakingNews{
     float: none;
-    width: 90%;
+    width: auto;
 }
 
 #menu {
     float: none;
     width: 90%;
-    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    max-width: fit-content;
+}
+
+#menu ul{
+    font-size: 100%;
+}
+
+#currentLink{
+    padding-left: 1.5em;
 }
 
 #content{
@@ -15,8 +25,11 @@
     border: none;
 }
 
-#footer p{
-    width: 75%; 
+footer .imgValidCode{
+    width: 10%;
+    padding: none;
 }
 
-/*Rivedere*/
+footer p{
+    width: 75%; 
+}
