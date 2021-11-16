@@ -137,7 +137,7 @@ Sezione Contenuto
 #charactersStory dd{
     border: 1px solid #000;
     border-top: none;
-    padding: 0.5em;
+    padding: 1em;
     margin-bottom: 1em;
     min-height: 10em;
 }
