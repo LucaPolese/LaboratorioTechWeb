@@ -25,6 +25,22 @@
     border: none;
 }
 
+#curiosita{
+    margin-left: 0;
+    padding: 1em;
+    border: none;
+}
+
+#curiosity1{
+    width : 100%;
+}
+
+#imageCake{
+    width : 95%;
+    padding: 0.5em;
+}
+
+
 footer .imgValidCode{
     width: 10%;
     padding: none;

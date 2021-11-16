@@ -4,9 +4,9 @@
 }
 
 html body{
-    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE_Regular", sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Sans', 'Arial', cursive, sans-serif;
     margin: auto;
-    /*Centro la pagina mettendo una dimensione massima della pagina*/
+    /*Centro la pagina definendo una dimensione massima*/
     max-width: 1024px;
 }
 
@@ -175,6 +175,7 @@ Sezione Contenuto
 }
 
 #imagePage{
+    box-shadow: 8px 8px 20px grey;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -206,13 +207,28 @@ Sezione Contenuto
     max-width: fit-content;
 }
 
-#curiosityH1{ 
-    text-align: center; 
-} 
+#curiosita {
+    border-left: 1px solid #000;
+    margin-left: 25%;
+    padding: 1.0em;
+    padding-top: 2.0em;
+    padding-left: 3.5em;
+}
 
-#curiosityH2{ 
-    font-size: 1.2em; 
-    padding: 0.2em; 
+#curiosita h1{
+    text-align: center;
+}
+
+#curiosita h2{
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+#curiosity1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /*
