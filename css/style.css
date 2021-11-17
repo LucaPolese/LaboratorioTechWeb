@@ -233,6 +233,26 @@ Sezione Contenuto
 
 /*
 =============
+Sezione Tabella
+=============
+*/
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+thead, tfoot{
+    color: white;
+    background-color: #A80022;
+}
+
+.centered{
+    text-align: center;
+}
+
+/*
+=============
 Sezione Footer
 =============
 */
