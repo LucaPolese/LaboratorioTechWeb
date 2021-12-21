@@ -2,7 +2,7 @@
     require_once "db.php";
     use DB\DBAccess;
 
-    $paginaHTML file_get_contents("nuovoProtagonistaForm.php");
+    $paginaHTML = file_get_contents("nuovoProtagonistaForm.html");
 
     $messaggi= "";
     $nome ="";
@@ -19,14 +19,14 @@
             $messaggi .= "<p>Il nome non può essere vuoto</p>";
         }elseif(preg_match('/\d/', $nome)){
             $messaggi .= "<p>Il nome non può contenere numeri</p>";
-        }))   
+        }   
 
         $colore = $_POST['colore'];
         if(!strlen($colore)){
             $messaggi .= "<p>Il colore non può essere vuoto</p>";
         }elseif(preg_match('/\d/', $nome)){
             $messaggi .= "<p>Il colore non può contenere numeri</p>";
-        }))   
+        }  
 
         $peso = $_POST['peso'];
         if(!strlen($peso)){
@@ -65,4 +65,5 @@
         }else{
             $messaggi .= "<p> Errore nell\' inserimento</p>";
         }
+    }
 ?>
