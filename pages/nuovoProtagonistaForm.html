@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        
+        //Funzione per mostrare l'errore
+        function mostraErrore(input){
+            var padre = input.parentNode;
+            //Nodo strong
+            var errore = document.createElement("strong");
+            //Definisco la classe di errore
+            errore.className = "errorSuggestion";
+            //Contiene il messaggio
+            errore.appendChild(document.createTextNode(dettagli_form[input.id][0]));
+            //Appendo al padre il nodo errore
+            padre.append(errore);
+        }
+
+        /*
+        chiave: campo input di cui inserisco informazioni
+        [0]: placeholder (indicazioni prima della digitazione)
+        [1]: espressione regolare
+        [2]: messaggio di errore
+        */
+        var dettagliForm = {
+            //Costruttore di un array posizionale quindi uso le quadre
+            "nome" : ["Nome del personaggio",/^\[A-Za-zàèéìòù\s]{2,}$/,"Inserire un nome di soli caratteri, di lunghezza almeno 2"],
+            "colore" : ["Colore del personaggio",/^\[A-Za-zàèéìòù\s]{2,}$/,"Inserire un colore di soli caratteri, di lunghezza almeno 2"],
+            "peso" : ["Peso del personaggio",/^\d+$/,"Inserire un numero"],
+            //Posso inserire qualsiasi carattere! Quindi posso essere generico
+            "descrizione" : ["Peso del personaggio",/^.+$/,"La descrizione deve essere lunga almeno 10 caratteri"]
+        };
+
+        //Non voglio toccare la struttura, pertanto vado a rimuovere tutti i termini <valoreX/>
+
+
+        function caricamento(){
+            for(var key in dettagli_form){
+                var input = document.getElementById(key);
+                campoDefault(input);
+                input.onfocus = function(){ campoPerInput(this); };
+                input.onblur = function(){ validazioneCampo(this); };
+            }
+        }
+
+        //Inserisco un valore al caricamento
+        function campoDefault(input){
+            //Se il campo è vuoto, prendo il valore de campo, gli metto l'array associativo, gli metto lid del campo e la prima posizione del placeholder
+            if(input.value == ""){
+                input.className = "default-text";
+                input.value = dettagli_form[input.id][0];
+            }
+        }
+
+        function campoPerInput(input){
+            if(input.value == dettagli_form[input.id][0]){
+                input.className = "";
+                input.value = "";
+            }
+        }
+
+        function validazioneCampo(input){
+            //Risentire
+            if(padre.chilren.length == 2){
+                padre.removeChildren(padre.children[1])
+            }
+
+            var regex = dettagli_form[input.id][1];
+            var text = input.value;
+            
+            if((text.search(regex)!=0) || (text == dettagli_form[input.id][0])){
+                mostraErrore(input);
+                input.focus();
+                input.select()
+                return false;
+            }
+            return true;
+            //Non va sempre bene, c'è un caso in cui non va bene:
+            //Fatto così, all'onload popolo subito i placeholder
+            //Verifico il caso in cui il testo è esattamente uguale a quello di default
+            
+        }
+
+        function validazioneForm(){
+            //Valido tutti i campi
+            for(var campo in form){
+                var input = document.getElementById(campo);
+                if(!validazioneCampo(input)){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        </script>
+    </head>
+    <body onload="caricamento()">
+        <form method="post" action="nuovoProtagonistaControlli.php" onsubmit="validazioneForm();">
+            <messaggiform>
+                <fieldset>
+                    <legend>Informazioni generali</legend>
+                    <label for="nome">Nome: </label>
+                    <span><input type="text" name="nome" id="nome"></span><br>
+
+                    <label for="colore">Colore: </label>
+                    <span><input type="text" name="colore" id="colore" ></span><br>
+
+                    <label for="peso">Peso: </label> 
+                    <span><input type="text" name="peso" id="peso" ></span><br>
+
+                    <label for="potenza">Potenza: </label>
+                    <select name="potenza" id="potenza">
+
+                    </select><option value="Bassa">Bassa</option><option value="Media">Media</option><option value="Alta">Alta</option></select> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Edizioni presente:</legend>
+                    <input id="angry_birds" type="checkbox" class="margineSinistro" name="presenteIn[]" value="Angry Birds">
+                    <label for="angry_birds">Angry Birds</label><br>
+
+                    <input id="angry_birds_rio" type="checkbox" class="margineSinistro" name="presenteIn[]" value="Angry Birds Rio">
+                    <label for="angry_birds_rio">Angry Birds Rio</label><br> 
+
+                    <input id="angry_birds_star_wars" type="checkbox" class="margineSinistro" name="presenteIn[]" value="Angry Birds Star Wars">
+                    <label for="angry_birds_star_wars">Angry Birds Star Wars</label><br>
+
+                    <input id="angry_birds_space" type="checkbox" class="margineSinistro" name="presenteIn[]" value="Angry Birds Space">
+                    <label for="angry_birds_space">Angry Birds Space</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descrizione dettagliata</legend>
+                    <label for="descrizione">Descrizione: </label>
+                    <span><textarea id="descrizione" name="descrizione">&lt;valoreDescrizione /&gt;</textarea></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bottoni</legend>
+                    <input type="submit" id="submit" name="submit" class="margineSinistro" value="Inserisci personaggio">
+                    <input type="reset" id="reset" class="margineSinistro" value="Cancella tutto">
+                </fieldset>
+            </messaggiform>
+        </form>
+    </body>
+</html>
