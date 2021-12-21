@@ -6,9 +6,8 @@
         private const DATABASE_NAME = "lpolese";
         private const USERNAME = "lpolese";
         private const PASSWORD = "";
-    }
 
-    private $connection;
+        private $connection;
 
     public function openDBConnection(){
         $this->connection = mysqli_connect(self::HOST_DB, self::USERNAME, self::PASSWORD, self::DATABASE_NAME);
@@ -38,4 +37,21 @@
         }
     }
 
+    public insertNewCharacter($nome,$colore,$peso,$potenza,$ab,$abr,$absw,$abs){
+        $query = "INSERT INTO personaggi (nome,colore,peso,potenzad,descrizione ,angry_birds,angry_birds_rio,angry_birds_stars,angry_birds_space) VALUES ('$nome','$colore','$peso','$potenza','$ab','$abr','$absw','$abs')";
+
+        $queryResult = mysqli_query($this->connection, $query) or die("Errore di inserimento: " . mysqli_error($this->connection));
+        if(mysqli_num_rows($queryResult) == 0){
+            return null;
+        }else{
+            $characterList = array();
+            while($row = mysqli_fetch_assoc($queryResult)){
+                array_push($characterList, $row);
+            }
+            $queryResult->free();
+            return $characterList;
+        }
+    }
+
+    }
 ?>
